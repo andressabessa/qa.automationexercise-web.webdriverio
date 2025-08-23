@@ -10,11 +10,12 @@ describe('Funcionalidade: Cadastro', () => {
   beforeEach(async () => {
     await homePage.open('/')
   })
-  
+
   it('CT01: Deve cadastrar um usuário com sucesso', async () => {
-    // Arrange - O ambiente já foi preparado no beforeEach (navegação para página inicial)
-    
-    // Act - Executando as ações do teste
+    // Arrange
+    // O ambiente já foi preparado no beforeEach
+
+    // Act
     await homePage.clickSignupLogin()
     await loginPage.fillNameAndEmail()
     await loginPage.clickButtonSignup()
@@ -25,8 +26,8 @@ describe('Funcionalidade: Cadastro', () => {
     await registerPage.clickCreateAccount()
     await registerPage.clickContinue()
     await registerPage.clickDeleteAccount()
-    
-    // Assert - Verificando se o resultado é o esperado
+
+    // Assert
     await registerPage.verifyAccountDeleted()
     await registerPage.clickContinue()
   })
