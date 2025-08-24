@@ -109,14 +109,14 @@ qa.automationexercise-web.webdriverio/
 
 ## Executando os testes
 
-### Executar todos os testes
+1. **Executar todos os testes:**
 
 ```bash
 # Executar todos os testes
 npm run wdio
 ```
 
-### Executar testes específicos
+2. **Executar testes específicos:**
 
 ```bash
 # Executar apenas um teste específico
@@ -126,6 +126,7 @@ npm run wdio -- --spec test/specs/registerUser.spec.js
 npm run wdio -- --spec test/specs/registerUser.spec.js test/specs/searchProduct.spec.js
 ```
 
+## Relatórios
 
 ### Como gerar os relatórios
 
@@ -135,8 +136,6 @@ O projeto utiliza o **Allure Framework** para geração de relatórios detalhado
 # Gerar relatório
 npm run allure:report
 ```
-
-> Exemplo: <img width="1042" height="563" alt="image" src="https://github.com/user-attachments/assets/d0a609b7-d52a-4b39-87cb-273aea0b6f68" />
 
 #### Informações do relatório
 
@@ -151,6 +150,7 @@ npm run allure:report
 - **Dados brutos**: `allure-results/`
 - **Relatório HTML**: `allure-report/` (gerado após execução)
 
+> Exemplo do relatório: <img width="1042" height="563" alt="image" src="https://github.com/user-attachments/assets/d0a609b7-d52a-4b39-87cb-273aea0b6f68" />
 
 ### Contato
 
