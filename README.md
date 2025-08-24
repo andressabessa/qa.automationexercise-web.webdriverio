@@ -70,8 +70,6 @@ npm install
 
 ## Configurações necessárias
 
-### Configurações do WebDriverIO
-
 Os principais parâmetros do projeto — como a URL da aplicação, credenciais e informações de execução — podem ser configurados diretamente no arquivo wdio.conf.js.
 
 ## Estrutura dos diretórios
