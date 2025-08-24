@@ -25,8 +25,14 @@ jobs:
           run: npm run wdio
           continue-on-error: true
 
+        - name: Install Allure CLI
+          run: |
+            curl -o allure-2.24.1.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.24.1/allure-commandline-2.24.1.tgz
+            tar -zxvf allure-2.24.1.tgz -C /opt/
+            ln -s /opt/allure-2.24.1/bin/allure /usr/local/bin/allure
+
         - name: Generate report
-          run: npm run allure:report
+          run: allure generate --clean allure-results
 
         - name: Upload Reports
           uses: actions/upload-artifact@v4
