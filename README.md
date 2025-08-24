@@ -29,8 +29,10 @@ Este projeto implementa testes automatizados para o site [Automation Exercise](h
 
 Antes de começar, certifique-se de ter instalado:
 
-- [Node.js](https://nodejs.org/) versão 14 ou superior
+- [Node.js](https://nodejs.org/) versão 20.x (conforme especificado no .nvmrc)
 - [npm](https://www.npmjs.com/) (normalmente já incluso com o Node.js)
+- [Google Chrome](https://www.google.com/chrome/) (versão mais recente)
+- [Git](https://git-scm.com/) para clonar o repositório
 
   
 ## Como instalar e executar o projeto 
@@ -45,12 +47,32 @@ git clone git@github.com:andressabessa/qa.automationexercise-web.webdriverio.git
 cd qa.automationexercise-web.webdriverio
 ```
 
-### 2. Instale as dependências
+### 2. Configure o Node.js
+
+```bash
+# Se você usa NVM, use a versão especificada no .nvmrc
+nvm use
+
+# Ou instale a versão 20 do Node.js
+nvm install 20
+nvm use 20
+
+# Verifique se está usando a versão correta
+node --version
+```
+
+### 3. Instale as dependências
 
 ```bash
 # Instale todas as dependências do projeto
 npm install
 ```
+
+## Configurações necessárias
+
+### Configurações do WebDriverIO
+
+Os principais parâmetros do projeto — como a URL da aplicação, credenciais e informações de execução — podem ser configurados diretamente no arquivo wdio.conf.js.
 
 ## Estrutura dos diretórios
 
@@ -87,7 +109,6 @@ qa.automationexercise-web.webdriverio/
 └──  README.md               # Este arquivo
 ```
 
-
 ## Executando os testes
 
 ### Executar todos os testes
@@ -110,7 +131,6 @@ npm run wdio -- --spec test/specs/registerUser.spec.js test/specs/searchProduct.
 
 ### Como gerar os relatórios
 
-
 O projeto utiliza o **Allure Framework** para geração de relatórios detalhados:
 
 ```bash
@@ -119,8 +139,6 @@ npm run allure:report
 ```
 
 > Exemplo: <img width="1042" height="563" alt="image" src="https://github.com/user-attachments/assets/d0a609b7-d52a-4b39-87cb-273aea0b6f68" />
-
-
 
 #### Informações do relatório
 
