@@ -6,7 +6,7 @@
 [![Mocha](https://img.shields.io/badge/Mocha-Test%20Framework-yellow.svg)](https://mochajs.org/)
 [![Allure](https://img.shields.io/badge/Allure-Reporting-orange.svg)](https://docs.qameta.io/allure/)
 
-> Projeto de automação de testes web utilizando WebDriverIO para o site [Automation Exercise](https://automationexercise.com/)
+> Projeto de automação de testes web utilizando WebdriverIO para o site [Automation Exercise](https://automationexercise.com/)
 
 ## Sobre o projeto
 
@@ -16,9 +16,9 @@ Este projeto implementa testes automatizados para o site [Automation Exercise](h
 ## Tecnologias utilizadas
 
 - [Node.js](https://nodejs.org) | Runtime JavaScript multiplataforma para servidor e CLIs.
-- [WebdriverIO](https://webdriver.io) | Framework de automação (web/mobile) baseado em WebDriver/BiDi e Appium.
+- [WebdriverIO](https://webdriver.io) | Framework de automação (web/mobile) baseado em Webdriver/BiDi e Appium.
 - [Mocha](https://mochajs.org) | Framework de testes JS simples e flexível para Node e navegador.
-- [ChromeDriver](https://developer.chrome.com/docs/chromedriver) | Servidor standalone que implementa o protocolo WebDriver/BiDi para Chrome.
+- [ChromeDriver](https://developer.chrome.com/docs/chromedriver) | Servidor standalone que implementa o protocolo Webdriver/BiDi para Chrome.
 - [Allure Reporter (WDIO)](https://webdriver.io/docs/allure-reporter/) | Plugin do WebdriverIO para gerar relatórios Allure.
 - [Faker.js](https://fakerjs.dev) | Geração de dados fake (realistas) para testes e desenvolvimento.
 - [ESLint](https://eslint.org) | Linter pluggable para encontrar e corrigir problemas em JavaScript.
@@ -37,7 +37,7 @@ Antes de começar, certifique-se de ter instalado:
   
 ## Como instalar e executar o projeto 
 
-### 1. Clone o repositório
+1. **Clone o repositório:**
 
 ```bash
 # Clone o repositório
@@ -47,7 +47,7 @@ git clone git@github.com:andressabessa/qa.automationexercise-web.webdriverio.git
 cd qa.automationexercise-web.webdriverio
 ```
 
-### 2. Configure o Node.js
+2. **Configure o Node.js:**
 
 ```bash
 # Se você usa NVM, use a versão especificada no .nvmrc
@@ -61,7 +61,7 @@ nvm use 20
 node --version
 ```
 
-### 3. Instale as dependências
+3. **Instale as dependências:**
 
 ```bash
 # Instale todas as dependências do projeto
@@ -72,7 +72,7 @@ npm install
 
 Os principais parâmetros do projeto — como a URL da aplicação, credenciais e informações de execução — podem ser configurados diretamente no arquivo wdio.conf.js.
 
-## Estrutura dos diretórios
+## Estrutura de pastas
 
 Abaixo está um desenho exemplificando a estrutura básica do projeto:
 
@@ -100,7 +100,7 @@ qa.automationexercise-web.webdriverio/
 │       ├── removeProductsFromCart.spec.js
 │       ├── searchProduct.spec.js
 │       └── verifyProductQuantity.spec.js
-├──  wdio.conf.js            # Configuração do WebDriverIO
+├──  wdio.conf.js            # Configuração do WebdriverIO
 ├──  package.json            # Dependências e scripts
 ├── .nvmrc                  # Versão do Node.js
 ├── .gitignore              # Arquivos ignorados pelo Git
