@@ -118,6 +118,10 @@ O projeto utiliza o **Allure Framework** para geração de relatórios detalhado
 npm run allure:report
 ```
 
+> Exemplo: <img width="1042" height="563" alt="image" src="https://github.com/user-attachments/assets/d0a609b7-d52a-4b39-87cb-273aea0b6f68" />
+
+
+
 #### Informações do relatório
 
 - **Execução de Testes**: Status de cada teste
