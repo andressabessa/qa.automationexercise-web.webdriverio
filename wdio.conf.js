@@ -51,7 +51,15 @@ exports.config = {
     {
       browserName: 'chrome',
       'goog:chromeOptions': {
-        args: ['--no-sandbox', '--disable-dev-shm-usage'],
+        args: [
+          '--no-sandbox',
+          '--disable-dev-shm-usage',
+          '--headless',
+          '--disable-gpu',
+          '--window-size=1920,1080',
+          '--disable-web-security',
+          '--disable-features=VizDisplayCompositor'
+        ],
       },
     },
   ],
