@@ -109,10 +109,12 @@ qa.automationexercise-web.webdriverio/
 
 ## Executando os testes
 
+> **Observação**: O projeto está configurado para executar **apenas em modo headless** (sem interface gráfica). Isso significa que você não verá o navegador abrindo durante a execução dos testes, mas eles estão rodando normalmente em segundo plano.
+
 1. **Executar todos os testes:**
 
 ```bash
-# Executar todos os testes
+# Executar todos os testes (modo headless)
 npm run wdio
 ```
 
@@ -125,6 +127,14 @@ npm run wdio -- --spec test/specs/registerUser.spec.js
 # Executar múltiplos testes
 npm run wdio -- --spec test/specs/registerUser.spec.js test/specs/searchProduct.spec.js
 ```
+
+### Vantagens do Modo Headless
+
+- **Performance**: Execução mais rápida sem renderização visual
+- **Recursos**: Menor consumo de memória e CPU
+- **Estabilidade**: Menos problemas relacionados a drivers gráficos
+- **CI/CD**: Ideal para ambientes de integração contínua
+- **Servidores**: Funciona perfeitamente em servidores sem display
 
 ## Relatórios
 
